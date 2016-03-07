@@ -26,7 +26,6 @@
     <object>objects\objEnemyMgr</object>
     <object>objects\objEnemyExplosion</object>
     <object>objects\objEnemy02</object>
-    <object>objects\objLanzador</object>
     <object>objects\objEnemy03</object>
   </objects>
   <rooms name="rooms">
