@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>// calculate the direction towards the player
-player = instance_find(objMainShip, 0);
+player = instance_find(sprMainStop, 0);
 xPlayer = player.x;
 yPlayer = player.y;
 xDiff = xPlayer - x;

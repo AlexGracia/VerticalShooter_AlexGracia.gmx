@@ -404,7 +404,7 @@ if (nextPosY &lt; sprite_height / 2 ||
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>objBullet</object>
+            <object>objAx</object>
           </argument>
           <argument>
             <kind>0</kind>
@@ -504,7 +504,7 @@ if (nextPosY &lt; sprite_height / 2 ||
         <arguments>
           <argument>
             <kind>5</kind>
-            <sprite>sprMainShip</sprite>
+            <sprite>sprMainWalkRight</sprite>
           </argument>
           <argument>
             <kind>0</kind>
@@ -534,7 +534,7 @@ if (nextPosY &lt; sprite_height / 2 ||
         <arguments>
           <argument>
             <kind>5</kind>
-            <sprite>sprMainShip</sprite>
+            <sprite>sprMainWalkRight</sprite>
           </argument>
           <argument>
             <kind>0</kind>
@@ -564,7 +564,7 @@ if (nextPosY &lt; sprite_height / 2 ||
         <arguments>
           <argument>
             <kind>5</kind>
-            <sprite>sprMainShip</sprite>
+            <sprite>sprMainWalkRight</sprite>
           </argument>
           <argument>
             <kind>0</kind>
@@ -594,7 +594,7 @@ if (nextPosY &lt; sprite_height / 2 ||
         <arguments>
           <argument>
             <kind>5</kind>
-            <sprite>sprMainShip</sprite>
+            <sprite>sprMainWalkLeft</sprite>
           </argument>
           <argument>
             <kind>0</kind>

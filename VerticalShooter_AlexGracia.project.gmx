@@ -6,22 +6,23 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\sprMainShip</sprite>
     <sprite>sprites\sprMainStop</sprite>
-    <sprite>sprites\sprBullet</sprite>
-    <sprite>sprites\sprEnemy01</sprite>
-    <sprite>sprites\sprEnemyExplosion</sprite>
-    <sprite>sprites\sprEnemy02</sprite>
+    <sprite>sprites\sprMainWalkRight</sprite>
+    <sprite>sprites\sprMainWalkLeft</sprite>
     <sprite>sprites\sprLanzador</sprite>
+    <sprite>sprites\sprAx</sprite>
+    <sprite>sprites\sprEnemy01</sprite>
+    <sprite>sprites\sprEnemy02</sprite>
     <sprite>sprites\sprEnemy03</sprite>
+    <sprite>sprites\sprEnemyExplosion</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgDesert</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
-    <object>objects\objMainShip</object>
-    <object>objects\objBullet</object>
+    <object>objects\objMainStop</object>
+    <object>objects\objAx</object>
     <object>objects\objEnemy01</object>
     <object>objects\objEnemyMgr</object>
     <object>objects\objEnemyExplosion</object>
