@@ -640,34 +640,6 @@ if (nextPosY &lt; sprite_height / 2 ||
     <event eventtype="10" enumb="40">
       <action>
         <libid>1</libid>
-        <id>541</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_sprite_set</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>5</kind>
-            <sprite>sprMainStop</sprite>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>1</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>611</id>
         <kind>6</kind>
         <userelative>-1</userelative>
@@ -692,34 +664,6 @@ if (nextPosY &lt; sprite_height / 2 ||
       </action>
     </event>
     <event eventtype="10" enumb="39">
-      <action>
-        <libid>1</libid>
-        <id>541</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_sprite_set</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>5</kind>
-            <sprite>sprMainStop</sprite>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>1</string>
-          </argument>
-        </arguments>
-      </action>
       <action>
         <libid>1</libid>
         <id>611</id>
@@ -788,36 +732,31 @@ if (nextPosY &lt; sprite_height / 2 ||
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="10" enumb="38">
       <action>
         <libid>1</libid>
-        <id>541</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_sprite_set</functionname>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>5</kind>
-            <sprite>sprMainStop</sprite>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>1</string>
+            <kind>1</kind>
+            <string>if(keyboard_check(vk_left))
+    action_sprite_set(sprMainWalkLeft, 0, 1);
+
+</string>
           </argument>
         </arguments>
       </action>
+    </event>
+    <event eventtype="10" enumb="38">
       <action>
         <libid>1</libid>
         <id>611</id>
@@ -846,34 +785,6 @@ if (nextPosY &lt; sprite_height / 2 ||
     <event eventtype="10" enumb="37">
       <action>
         <libid>1</libid>
-        <id>541</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_sprite_set</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>5</kind>
-            <sprite>sprMainStop</sprite>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>1</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>611</id>
         <kind>6</kind>
         <userelative>-1</userelative>
@@ -940,33 +851,51 @@ if (nextPosY &lt; sprite_height / 2 ||
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="10" enumb="17">
       <action>
         <libid>1</libid>
-        <id>541</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_sprite_set</functionname>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>5</kind>
-            <sprite>sprMainStop</sprite>
+            <kind>1</kind>
+            <string>if(keyboard_check(vk_right))
+    action_sprite_set(sprMainWalkRight, 0, 1);
+
+</string>
           </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="10" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
           <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>1</string>
+            <kind>1</kind>
+            <string>if(keyboard_check(vk_nokey))
+    action_sprite_set(sprMainStop, 0, 1);
+
+</string>
           </argument>
         </arguments>
       </action>
