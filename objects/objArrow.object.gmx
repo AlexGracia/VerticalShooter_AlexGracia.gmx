@@ -48,7 +48,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>action_sound(beepSound, false);
+
 if (keyboard_check_released(vk_down))
     posicion = 288;
 else if (keyboard_check_released(vk_up))

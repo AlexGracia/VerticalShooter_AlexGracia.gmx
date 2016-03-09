@@ -5,7 +5,7 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
-    <sound>sound\sound0</sound>
+    <sound>sound\beepSound</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprMainStop</sprite>
