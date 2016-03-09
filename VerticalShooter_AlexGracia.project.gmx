@@ -4,7 +4,9 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sound0</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprMainStop</sprite>
     <sprite>sprites\sprMainWalkRight</sprite>
@@ -15,8 +17,10 @@
     <sprite>sprites\sprEnemy02</sprite>
     <sprite>sprites\sprEnemy03</sprite>
     <sprite>sprites\sprEnemyExplosion</sprite>
+    <sprite>sprites\sprArrow</sprite>
   </sprites>
   <backgrounds name="background">
+    <background>background\bgMenu</background>
     <background>background\bgDesert</background>
   </backgrounds>
   <paths name="paths"/>
@@ -28,8 +32,10 @@
     <object>objects\objEnemyExplosion</object>
     <object>objects\objEnemy02</object>
     <object>objects\objEnemy03</object>
+    <object>objects\objArrow</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\menuRoom</room>
     <room>rooms\mainRoom</room>
   </rooms>
   <help>
