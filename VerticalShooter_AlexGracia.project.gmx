@@ -8,35 +8,45 @@
     <sound>sound\beepSound</sound>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\sprMainStop</sprite>
-    <sprite>sprites\sprMainWalkRight</sprite>
-    <sprite>sprites\sprMainWalkLeft</sprite>
-    <sprite>sprites\sprLanzador</sprite>
-    <sprite>sprites\sprAx</sprite>
-    <sprite>sprites\sprEnemy01</sprite>
-    <sprite>sprites\sprEnemy02</sprite>
-    <sprite>sprites\sprEnemy03</sprite>
-    <sprite>sprites\sprEnemyExplosion</sprite>
+    <sprites name="groupPlay">
+      <sprite>sprites\sprMainStop</sprite>
+      <sprite>sprites\sprMainWalkRight</sprite>
+      <sprite>sprites\sprMainWalkLeft</sprite>
+      <sprite>sprites\sprLanzador</sprite>
+      <sprite>sprites\sprAx</sprite>
+      <sprite>sprites\sprEnemy01</sprite>
+      <sprite>sprites\sprEnemy02</sprite>
+      <sprite>sprites\sprEnemy03</sprite>
+      <sprite>sprites\sprEnemyExplosion</sprite>
+    </sprites>
     <sprite>sprites\sprArrow</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgMenu</background>
+    <background>background\bgControls</background>
     <background>background\bgDesert</background>
   </backgrounds>
   <paths name="paths"/>
+  <fonts name="fonts"/>
   <objects name="objects">
-    <object>objects\objMainStop</object>
-    <object>objects\objAx</object>
-    <object>objects\objEnemy01</object>
-    <object>objects\objEnemyMgr</object>
-    <object>objects\objEnemyExplosion</object>
-    <object>objects\objEnemy02</object>
-    <object>objects\objEnemy03</object>
-    <object>objects\objArrow</object>
+    <objects name="groupPlay">
+      <object>objects\objMainStop</object>
+      <object>objects\objAx</object>
+      <object>objects\objEnemy01</object>
+      <object>objects\objEnemy02</object>
+      <object>objects\objEnemy03</object>
+      <object>objects\objEnemyMgr</object>
+      <object>objects\objEnemyExplosion</object>
+    </objects>
+    <objects name="groupMenu">
+      <object>objects\objArrow</object>
+      <object>objects\objReturn</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\menuRoom</room>
-    <room>rooms\mainRoom</room>
+    <room>rooms\controlsRoom</room>
+    <room>rooms\playRoom</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
