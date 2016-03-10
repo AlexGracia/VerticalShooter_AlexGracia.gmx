@@ -27,7 +27,6 @@
     <background>background\bgDesert</background>
   </backgrounds>
   <paths name="paths"/>
-  <fonts name="fonts"/>
   <objects name="objects">
     <objects name="groupPlay">
       <object>objects\objMainStop</object>

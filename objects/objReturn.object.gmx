@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="10" enumb="17">
+    <event eventtype="10" enumb="1">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -26,7 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>action_sound(beepSound, false);
-room_goto_previous();
+
+if (keyboard_check_released(vk_control))
+    room_goto_previous();
 </string>
           </argument>
         </arguments>
