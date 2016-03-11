@@ -156,8 +156,11 @@ if (nextPosY &lt; sprite_height / 2 ||
     y = clamp(nextPosY, sprite_height / 2, room_height - sprite_height / 2);
 }
 
-if (lifes &lt;= 0)
+if (lifes &lt;= 0){
     instance_destroy();
+    gameOver = instance_find(objGameOver, 0);
+    gameOver.isGameOver = true;
+}
 
 </string>
           </argument>
@@ -220,7 +223,7 @@ if (lifes &lt;= 0)
           <argument>
             <kind>1</kind>
             <string>if (score &gt; 0)
-    score -= 50;
+    score -= 2;
 </string>
           </argument>
         </arguments>
@@ -824,6 +827,7 @@ if (lifes &lt;= 0)
             <string>if(keyboard_check(vk_left))
     action_sprite_set(sprMainWalkLeft, 0, 1);
 
+
 </string>
           </argument>
         </arguments>
@@ -967,8 +971,10 @@ if (lifes &lt;= 0)
             <kind>1</kind>
             <string>if(keyboard_check(vk_nokey))
     action_sprite_set(sprMainStop, 0, 1);
+
 else if (keyboard_check(vk_control) &amp;&amp; targetVelX == 0 &amp;&amp; targetVelY == 0)
     action_sprite_set(sprLanzador, 0, 1);
+
 </string>
           </argument>
         </arguments>

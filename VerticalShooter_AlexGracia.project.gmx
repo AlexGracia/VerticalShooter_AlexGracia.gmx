@@ -19,6 +19,7 @@
       <sprite>sprites\sprEnemy03</sprite>
       <sprite>sprites\sprEnemyExplosion</sprite>
       <sprite>sprites\sprLife</sprite>
+      <sprite>sprites\sprGameOver</sprite>
     </sprites>
     <sprite>sprites\sprArrow</sprite>
   </sprites>
@@ -38,6 +39,7 @@
       <object>objects\objEnemyMgr</object>
       <object>objects\objEnemyExplosion</object>
       <object>objects\objHUD</object>
+      <object>objects\objGameOver</object>
     </objects>
     <objects name="groupMenu">
       <object>objects\objArrow</object>

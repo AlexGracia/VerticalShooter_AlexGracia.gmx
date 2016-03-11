@@ -133,7 +133,7 @@
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>score + 100</string>
+            <string>score + 10</string>
           </argument>
         </arguments>
       </action>
