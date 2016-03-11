@@ -18,6 +18,7 @@
       <sprite>sprites\sprEnemy02</sprite>
       <sprite>sprites\sprEnemy03</sprite>
       <sprite>sprites\sprEnemyExplosion</sprite>
+      <sprite>sprites\sprLife</sprite>
     </sprites>
     <sprite>sprites\sprArrow</sprite>
   </sprites>
@@ -36,6 +37,7 @@
       <object>objects\objEnemy03</object>
       <object>objects\objEnemyMgr</object>
       <object>objects\objEnemyExplosion</object>
+      <object>objects\objHUD</object>
     </objects>
     <objects name="groupMenu">
       <object>objects\objArrow</object>
