@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// calculate the direction towards the player
+            <string>depth = 1;
+
+// calculate the direction towards the player
 if (instance_exists(sprMainStop)){
     player = instance_find(sprMainStop, 0);
     xPlayer = player.x;

@@ -57,36 +57,9 @@ if player != noone
     for (i = 0; i &lt; player.lifes; i++)
         draw_sprite(sprLife, 0, livesIniX + livesDistX * i, livesY);
 
+action_draw_score(room_width - 110, y, "Score:");
 
 </string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>703</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_draw_score</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>room_width - 110</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>y</string>
-          </argument>
-          <argument>
-            <kind>1</kind>
-            <string>Score: </string>
           </argument>
         </arguments>
       </action>
