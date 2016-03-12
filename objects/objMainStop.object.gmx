@@ -76,6 +76,7 @@
             <string>acceleration = 2;
 targetVelX = 0;
 targetVelY = 0;
+bgHSpeed = 4;
 
 </string>
           </argument>
@@ -250,7 +251,7 @@ if (lifes &lt;= 0){
           </argument>
           <argument>
             <kind>0</kind>
-            <string>10</string>
+            <string>8</string>
           </argument>
         </arguments>
       </action>
@@ -258,9 +259,9 @@ if (lifes &lt;= 0){
     <event eventtype="5" enumb="39">
       <action>
         <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
         <exetype>2</exetype>
@@ -272,55 +273,9 @@ if (lifes &lt;= 0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>targetVelX</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>10</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>background_hspeed[0]</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>-4</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>103</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_hspeed</functionname>
-        <codestring></codestring>
-        <whoName>objEnemy01</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>-8</string>
+            <string>background_hspeed[0] = -bgHSpeed;
+targetVelX = 8;
+</string>
           </argument>
         </arguments>
       </action>
@@ -346,7 +301,7 @@ if (lifes &lt;= 0){
           </argument>
           <argument>
             <kind>0</kind>
-            <string>-10</string>
+            <string>-8</string>
           </argument>
         </arguments>
       </action>
@@ -354,9 +309,9 @@ if (lifes &lt;= 0){
     <event eventtype="5" enumb="37">
       <action>
         <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
         <exetype>2</exetype>
@@ -368,55 +323,9 @@ if (lifes &lt;= 0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>targetVelX</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>-10</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>background_hspeed[0]</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>4</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>103</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_hspeed</functionname>
-        <codestring></codestring>
-        <whoName>objEnemy01</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>-2</string>
+            <string>background_hspeed[0] = bgHSpeed;
+targetVelX = -8;
+</string>
           </argument>
         </arguments>
       </action>
@@ -766,50 +675,6 @@ if (lifes &lt;= 0){
       </action>
       <action>
         <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>background_hspeed[0]</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>103</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_hspeed</functionname>
-        <codestring></codestring>
-        <whoName>objEnemy01</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>-4</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -824,9 +689,10 @@ if (lifes &lt;= 0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(keyboard_check(vk_left))
+            <string>if keyboard_check(vk_left){
     action_sprite_set(sprMainWalkLeft, 0, 1);
-
+    background_hspeed[0] = bgHSpeed;
+}
 
 </string>
           </argument>
@@ -886,50 +752,6 @@ if (lifes &lt;= 0){
       </action>
       <action>
         <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>background_hspeed[0]</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>103</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_hspeed</functionname>
-        <codestring></codestring>
-        <whoName>objEnemy01</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>-4</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -944,8 +766,10 @@ if (lifes &lt;= 0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(keyboard_check(vk_right))
+            <string>if keyboard_check(vk_right){
     action_sprite_set(sprMainWalkRight, 0, 1);
+    background_hspeed[0] = -bgHSpeed;
+}
 
 </string>
           </argument>
@@ -969,11 +793,15 @@ if (lifes &lt;= 0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(keyboard_check(vk_nokey))
+            <string>if keyboard_check(vk_nokey){
     action_sprite_set(sprMainStop, 0, 1);
+    background_hspeed[0] = 0;
+}
 
-else if (keyboard_check(vk_control) &amp;&amp; targetVelX == 0 &amp;&amp; targetVelY == 0)
+else if keyboard_check(vk_control) &amp;&amp; targetVelX == 0 &amp;&amp; targetVelY == 0{
     action_sprite_set(sprLanzador, 0, 1);
+    background_hspeed[0] = 0;
+}
 
 </string>
           </argument>

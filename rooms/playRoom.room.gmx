@@ -55,6 +55,7 @@
     <instance objName="objMainStop" x="21" y="487" name="inst_A390EE3A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objHUD" x="16" y="16" name="inst_EC62BC4B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objGameOver" x="256" y="224" name="inst_0B1A1604" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSoundMgr" x="480" y="480" name="inst_1B03F63B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

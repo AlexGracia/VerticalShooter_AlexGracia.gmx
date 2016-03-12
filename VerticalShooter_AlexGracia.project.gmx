@@ -6,6 +6,8 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\beepSound</sound>
+    <sound>sound\soundBgGameOver</sound>
+    <sound>sound\soundBgGame</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="groupPlay">
@@ -40,6 +42,7 @@
       <object>objects\objEnemyExplosion</object>
       <object>objects\objHUD</object>
       <object>objects\objGameOver</object>
+      <object>objects\objSoundMgr</object>
     </objects>
     <objects name="groupMenu">
       <object>objects\objArrow</object>

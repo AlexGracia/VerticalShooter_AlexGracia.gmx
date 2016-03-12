@@ -53,7 +53,7 @@ livesDistX = sprite_get_width(sprLife) + sprite_get_width(sprLife)/2;
             <string>
 player = instance_find(objMainStop, 0);
 
-if (player != noone)
+if player != noone
     for (i = 0; i &lt; player.lifes; i++)
         draw_sprite(sprLife, 0, livesIniX + livesDistX * i, livesY);
 
