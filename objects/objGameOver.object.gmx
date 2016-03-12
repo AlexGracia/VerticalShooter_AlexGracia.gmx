@@ -50,7 +50,7 @@
             <kind>1</kind>
             <string>if isGameOver{
     background_hspeed[0] = 0;
-    
+
     draw_sprite(sprGameOver, 0, room_width/2, room_height/2);
 
     if !audio_is_playing(soundBgGameOver){

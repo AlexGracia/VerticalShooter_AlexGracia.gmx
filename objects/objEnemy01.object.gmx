@@ -82,6 +82,7 @@
     // destroy the object, we're out of the screen
     instance_destroy();
 }
+
 </string>
           </argument>
         </arguments>

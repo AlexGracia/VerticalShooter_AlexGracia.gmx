@@ -78,7 +78,7 @@ if player != noone
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>room_width - 100</string>
+            <string>room_width - 110</string>
           </argument>
           <argument>
             <kind>0</kind>

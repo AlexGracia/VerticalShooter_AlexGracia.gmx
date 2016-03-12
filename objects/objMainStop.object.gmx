@@ -802,6 +802,8 @@ else if keyboard_check(vk_control) &amp;&amp; targetVelX == 0 &amp;&amp; targetV
     action_sprite_set(sprLanzador, 0, 1);
     background_hspeed[0] = 0;
 }
+else if keyboard_check(vk_up) || keyboard_check(vk_down)
+    background_hspeed[0] = 0;
 
 </string>
           </argument>
