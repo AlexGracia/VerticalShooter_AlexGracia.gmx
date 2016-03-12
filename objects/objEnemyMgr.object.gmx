@@ -100,8 +100,8 @@
           <argument>
             <kind>1</kind>
             <string>// create the new enemy
-enemyPosX = random_range(40, room_height - 40);
-enemyPosY = 16;
+enemyPosX = random_range(40, 472);
+enemyPosY = -sprite_height;
 instance_create(enemyPosX, enemyPosY, objEnemy03);
 
 // reset the alarm
@@ -130,8 +130,8 @@ alarm[2] = room_speed * 3;
           <argument>
             <kind>1</kind>
             <string>// create an enemy of type Enemy02
-enemyPosX = random_range(16, room_width - 16);
-enemyPosY = -16;
+enemyPosX = random_range(32, 480);
+enemyPosY = -sprite_height;
 instance_create(enemyPosX, enemyPosY, objEnemy02);
 
 // set the alarm again
@@ -160,8 +160,8 @@ alarm[1] = irandom_range(2 * room_speed, 4 * room_speed);
           <argument>
             <kind>1</kind>
             <string>// create the new enemy
-enemyPosX = 512;
-enemyPosY = random_range(23, room_height - 23);
+enemyPosX = room_width;
+enemyPosY = random_range(46, 466);
 instance_create(enemyPosX, enemyPosY, objEnemy01);
 
 // reset the alarm

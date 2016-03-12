@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hspeed = -4;
+            <string>hspeed = -3;
 depth = 2;
 </string>
           </argument>
@@ -79,10 +79,18 @@ depth = 2;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if y &gt; room_height + sprite_height{
+            <string>if y &gt; room_height + sprite_height || x &lt; -sprite_width {
     // destroy the object, we're out of the screen
     instance_destroy();
 }
+
+if hspeed != -3
+    hspeed = -3;
+
+if background_hspeed[0] &gt; 0
+    hspeed += 3;
+else if background_hspeed[0] &lt; 0
+    hspeed -= 3;
 
 </string>
           </argument>
