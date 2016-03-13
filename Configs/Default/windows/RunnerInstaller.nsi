@@ -23,7 +23,7 @@
 !endif
 
 !ifndef COMPANY_NAME
-!define COMPANY_NAME      ""
+!define COMPANY_NAME      "University San Jorge"
 !endif
 
 !ifndef COPYRIGHT_TXT
@@ -51,7 +51,7 @@
 !endif
 
 !ifndef PRODUCT_NAME
-!define PRODUCT_NAME      "Runner"
+!define PRODUCT_NAME      "Shooter by AlexGracia"
 !endif
 
 !define APP_NAME        "${PRODUCT_NAME}"
