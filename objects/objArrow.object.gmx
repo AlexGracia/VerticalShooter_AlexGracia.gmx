@@ -38,6 +38,8 @@ else if keyboard_check_released(vk_up) &amp;&amp; y &gt; 176
 if keyboard_check_released(vk_control)
     switch(y){
         case 176:
+            room_instance_clear(0);
+            room_instance_clear(1);
             room_goto(2);
             break;
         case 248:
