@@ -28,6 +28,7 @@
             <string>livesIniX = x;
 livesY = y;
 livesDistX = sprite_get_width(sprLife) + sprite_get_width(sprLife)/2;
+score = 0;
 </string>
           </argument>
         </arguments>
