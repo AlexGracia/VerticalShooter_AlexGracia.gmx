@@ -27,15 +27,17 @@
             <kind>1</kind>
             <string>audio_play_sound(beepSound, 0, false);
 
-if !keyboard_check_released(vk_down) &amp;&amp; !keyboard_check_released(vk_up) &amp;&amp; !keyboard_check_released(vk_control) &amp;&amp; !keyboard_check_released(vk_enter)
+if !keyboard_check_released(vk_down) &amp;&amp; !keyboard_check_released(vk_up) &amp;&amp; !keyboard_check_released(vk_control) &amp;&amp; !keyboard_check_released(vk_enter){
     show_message("Please, you press key up, down or Ctrl.");
+    exit;
+}
 
 if keyboard_check_released(vk_down) &amp;&amp; y &lt; 320
     y += 72;
 else if keyboard_check_released(vk_up) &amp;&amp; y &gt; 176
     y -= 72;
 
-if keyboard_check_released(vk_control)
+if keyboard_check_released(vk_control) || keyboard_check_released(vk_enter)
     switch(y){
         case 176:
             room_instance_clear(0);
