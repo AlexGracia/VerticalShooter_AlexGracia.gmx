@@ -11,54 +11,6 @@
     <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>canShoot</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>true</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>lifes</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>3</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -77,6 +29,8 @@
 targetVelX = 0;
 targetVelY = 0;
 bgHSpeed = 4;
+lifes = 3;
+canShoot = true;
 
 </string>
           </argument>
@@ -157,11 +111,6 @@ if (nextPosY &lt; sprite_height / 2 ||
     y = clamp(nextPosY, sprite_height / 2, room_height - sprite_height / 2);
 }
 
-if (lifes &lt;= 0){
-    instance_destroy();
-    gameOver = instance_find(objGameOver, 0);
-    gameOver.isGameOver = true;
-}
 
 </string>
           </argument>
@@ -225,6 +174,12 @@ if (lifes &lt;= 0){
             <kind>1</kind>
             <string>if (score &gt; 0)
     score -= 2;
+
+if (lifes &lt;= 0){
+    instance_destroy();
+    gameOver = instance_find(objGameOver, 0);
+    gameOver.isGameOver = true;
+}
 </string>
           </argument>
         </arguments>
