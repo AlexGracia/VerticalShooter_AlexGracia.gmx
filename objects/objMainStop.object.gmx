@@ -134,30 +134,6 @@ if (nextPosY &lt; sprite_height / 2 ||
       </action>
       <action>
         <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>lifes</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>lifes-1</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -172,7 +148,9 @@ if (nextPosY &lt; sprite_height / 2 ||
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (score &gt; 0)
+            <string>lifes -= 1;
+
+if (score &gt; 0)
     score -= 2;
 
 if (lifes &lt;= 0){
