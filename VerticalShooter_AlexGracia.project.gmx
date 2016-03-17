@@ -22,6 +22,7 @@
       <sprite>sprites\sprEnemyExplosion</sprite>
       <sprite>sprites\sprLife</sprite>
       <sprite>sprites\sprGameOver</sprite>
+      <sprite>sprites\sprArrowAttack</sprite>
     </sprites>
     <sprite>sprites\sprArrow</sprite>
   </sprites>
@@ -35,6 +36,7 @@
     <objects name="groupPlay">
       <object>objects\objMainStop</object>
       <object>objects\objAx</object>
+      <object>objects\objArrowAttack</object>
       <object>objects\objEnemy01</object>
       <object>objects\objEnemy02</object>
       <object>objects\objEnemy03</object>
