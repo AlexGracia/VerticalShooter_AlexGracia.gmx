@@ -14,7 +14,7 @@
       <sprite>sprites\sprMainStop</sprite>
       <sprite>sprites\sprMainWalkRight</sprite>
       <sprite>sprites\sprMainWalkLeft</sprite>
-      <sprite>sprites\sprLanzador</sprite>
+      <sprite>sprites\sprThrower</sprite>
       <sprite>sprites\sprAx</sprite>
       <sprite>sprites\sprEnemy01</sprite>
       <sprite>sprites\sprEnemy02</sprite>

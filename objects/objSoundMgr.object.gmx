@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_play_sound(soundBgGame, 0, true);
+            <string>/// Play sound soundBgGame
+audio_play_sound(soundBgGame, 0, true);
 </string>
           </argument>
         </arguments>

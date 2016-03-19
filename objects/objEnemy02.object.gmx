@@ -51,7 +51,8 @@ vspeed = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists(sprMainStop)
+            <string>/// Follow player
+if instance_exists(sprMainStop)
     action_potential_step(objMainStop.x, objMainStop.y, 1, solid);
 
 </string>

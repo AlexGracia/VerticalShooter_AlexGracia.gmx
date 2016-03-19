@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>acceleration = 2;
+            <string>/// Variables
+
+acceleration = 2;
 targetVelX = 0;
 targetVelY = 0;
 bgHSpeed = 4;
@@ -163,33 +165,7 @@ if (lifes &lt;= 0){
         </arguments>
       </action>
     </event>
-    <event eventtype="5" enumb="40">
-      <action>
-        <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>targetVelY</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>8</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="5" enumb="39">
+    <event eventtype="5" enumb="1">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -206,91 +182,33 @@ if (lifes &lt;= 0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>background_hspeed[0] = -bgHSpeed;
-targetVelX = 8;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="5" enumb="38">
-      <action>
-        <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>targetVelY</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>-8</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="5" enumb="37">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>background_hspeed[0] = bgHSpeed;
-targetVelX = -8;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="5" enumb="32">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if canShoot{
-    action_create_object_motion(objArrowAttack, x, y, 6, 90);
-    canShoot = false;
-    alarm[0] = 12;
+            <string>/// Move
+
+// Left
+if keyboard_check(vk_left){
+    targetVelX = -8;
+    background_hspeed[0] = bgHSpeed;
 }
+
+// Right
+else if keyboard_check(vk_right){
+    targetVelX = 8;
+    background_hspeed[0] = -bgHSpeed;
+}
+
+// Down
+if keyboard_check(vk_down)
+    targetVelY = 8;
+
+
+// Up
+else if keyboard_check(vk_up)
+    targetVelY = -8;
+
 </string>
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="5" enumb="17">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -307,172 +225,35 @@ targetVelX = -8;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if canShoot{
+            <string>/// Attack
+if !canShoot
+    exit;
+
+// Ax
+if keyboard_check(vk_control){
     action_create_object_motion(objAx, x, y, 4, 0);
-    canShoot = false;
     alarm[0] = 8;
+    canShoot = false;
 }
+
+// Arrow
+else if keyboard_check(vk_space){
+    action_create_object_motion(objArrowAttack, x, y, 6, 90);
+    alarm[0] = 12;
+    canShoot = false;
+}
+
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="9" enumb="40">
+    <event eventtype="9" enumb="1">
       <action>
         <libid>1</libid>
-        <id>541</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_sprite_set</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>5</kind>
-            <sprite>sprMainWalkRight</sprite>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>1</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="39">
-      <action>
-        <libid>1</libid>
-        <id>541</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_sprite_set</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>5</kind>
-            <sprite>sprMainWalkRight</sprite>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>1</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="38">
-      <action>
-        <libid>1</libid>
-        <id>541</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_sprite_set</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>5</kind>
-            <sprite>sprMainWalkRight</sprite>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>1</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="37">
-      <action>
-        <libid>1</libid>
-        <id>541</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_sprite_set</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>5</kind>
-            <sprite>sprMainWalkLeft</sprite>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>1</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="17">
-      <action>
-        <libid>1</libid>
-        <id>541</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_sprite_set</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>5</kind>
-            <sprite>sprLanzador</sprite>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>1</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="10" enumb="40">
-      <action>
-        <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
         <exetype>2</exetype>
@@ -484,11 +265,20 @@ targetVelX = -8;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>targetVelY</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
+            <string>/// Sprite set
+
+// vk_control
+if keyboard_check_pressed(vk_control)
+    action_sprite_set(sprThrower, 0, 1);
+
+// vk_left
+else if keyboard_check_pressed(vk_left)
+    action_sprite_set(sprMainWalkLeft, 0, 1);
+
+// vk_right, vk_down or vk_up
+else if keyboard_check_pressed(vk_right) || keyboard_check_pressed(vk_down) || keyboard_check_pressed(vk_up)
+    action_sprite_set(sprMainWalkRight, 0, 1);
+</string>
           </argument>
         </arguments>
       </action>
@@ -511,39 +301,11 @@ targetVelX = -8;
           <argument>
             <kind>1</kind>
             <string>targetVelX = 0;
-
 if keyboard_check(vk_left){
     action_sprite_set(sprMainWalkLeft, 0, 1);
     background_hspeed[0] = bgHSpeed;
 }
-
 </string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="10" enumb="38">
-      <action>
-        <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>targetVelY</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
           </argument>
         </arguments>
       </action>
@@ -566,12 +328,10 @@ if keyboard_check(vk_left){
           <argument>
             <kind>1</kind>
             <string>targetVelX = 0;
-
 if keyboard_check(vk_right){
     action_sprite_set(sprMainWalkRight, 0, 1);
     background_hspeed[0] = -bgHSpeed;
 }
-
 </string>
           </argument>
         </arguments>
@@ -594,17 +354,24 @@ if keyboard_check(vk_right){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if keyboard_check(vk_nokey){
+            <string>// vk_down or vk_up
+if keyboard_check_released(vk_down) || keyboard_check_released(vk_up)
+    targetVelY = 0;
+
+// vk_control
+else if keyboard_check_released(vk_control)
     action_sprite_set(sprMainStop, 0, 1);
+
+if keyboard_check(vk_control) &amp;&amp; targetVelX == 0 &amp;&amp; targetVelY == 0{
+    action_sprite_set(sprThrower, 0, 1);
     background_hspeed[0] = 0;
 }
 
-else if keyboard_check(vk_control) &amp;&amp; targetVelX == 0 &amp;&amp; targetVelY == 0{
-    action_sprite_set(sprLanzador, 0, 1);
+// vk_nokey
+if keyboard_check(vk_nokey){
+    action_sprite_set(sprMainStop, 0, 1);
     background_hspeed[0] = 0;
 }
-else if keyboard_check(vk_up) || keyboard_check(vk_down)
-    background_hspeed[0] = 0;
 
 </string>
           </argument>
