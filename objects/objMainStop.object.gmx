@@ -33,8 +33,35 @@ targetVelY = 0;
 bgHSpeed = 4;
 lifes = 3;
 canShoot = true;
+isInvulnerable = false;
 
 </string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>isInvulnerable</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>false</string>
           </argument>
         </arguments>
       </action>
@@ -150,7 +177,10 @@ if (nextPosY &lt; sprite_height / 2 ||
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>lifes -= 1;
+            <string>if isInvulnerable
+    exit;
+
+lifes -= 1;
 
 if (score &gt; 0)
     score -= 2;
@@ -243,6 +273,35 @@ else if keyboard_check(vk_space){
     canShoot = false;
 }
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Defense
+if isInvulnerable
+    exit;
+
+if keyboard_check_pressed(ord("I")){
+    //instance_create(16, 496, objDefense);
+    isInvulnerable = true;
+    alarm[1] = 60;
+}
 </string>
           </argument>
         </arguments>

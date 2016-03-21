@@ -52,8 +52,10 @@ vspeed = 1;
           <argument>
             <kind>1</kind>
             <string>/// Follow player
-if instance_exists(sprMainStop)
-    action_potential_step(objMainStop.x, objMainStop.y, 1, solid);
+player = instance_find(objMainStop, 0);
+
+if player != noone
+    action_potential_step(player.x, player.y, 1, solid);
 
 </string>
           </argument>

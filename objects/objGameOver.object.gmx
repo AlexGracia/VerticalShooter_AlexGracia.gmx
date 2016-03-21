@@ -56,12 +56,14 @@ if isGameOver{
 
     draw_sprite(sprGameOver, 0, room_width/2, room_height/2);
 
+    // Play sound of game over
     if !audio_is_playing(soundBgGameOver){
         audio_stop_sound(soundBgGame);
         audio_play_sound(soundBgGameOver, 0, false);
     }
 
-    if keyboard_check_pressed(vk_control) || keyboard_check_pressed(vk_enter){
+    // Go to main menu
+    if keyboard_check_pressed(vk_control) || keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space){
         audio_stop_all();
         room_instance_clear(2);
         room_goto(0);

@@ -21,6 +21,7 @@
       <sprite>sprites\sprEnemy03</sprite>
       <sprite>sprites\sprEnemyExplosion</sprite>
       <sprite>sprites\sprLife</sprite>
+      <sprite>sprites\sprDefense</sprite>
       <sprite>sprites\sprGameOver</sprite>
       <sprite>sprites\sprArrowAttack</sprite>
     </sprites>
@@ -45,6 +46,7 @@
       <object>objects\objHUD</object>
       <object>objects\objGameOver</object>
       <object>objects\objSoundMgr</object>
+      <object>objects\objDefense</object>
     </objects>
     <objects name="groupMenu">
       <object>objects\objArrow</object>
