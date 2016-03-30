@@ -25,9 +25,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>livesIniX = x;
+            <string>/// Variables
+
+// Lifes
+livesIniX = x;
 livesY = y;
 livesDistX = sprite_get_width(sprLife) + sprite_get_width(sprLife)/2;
+
+// Score
+scoreX = room_width - 110;
+scoreY = y - (sprite_get_height(sprLife) / 2) ;
 score = 0;
 </string>
           </argument>
@@ -61,7 +68,7 @@ if player != noone
         draw_sprite(sprLife, 0, livesIniX + livesDistX * i, livesY);
 
 // Score
-action_draw_score(room_width - 110, y, "Score:");
+action_draw_score(scoreX, scoreY, "Score:");
 
 </string>
           </argument>
