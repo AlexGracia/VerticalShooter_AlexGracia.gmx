@@ -352,6 +352,7 @@ else if keyboard_check_pressed(vk_down) &amp;&amp; keyboard_check(vk_right)
 // vk_up or vk_down only
 else if keyboard_check_pressed(vk_up) || keyboard_check_pressed(vk_down)
     sprite_index = sprMainWalkRight;
+
 </string>
           </argument>
         </arguments>
@@ -375,10 +376,11 @@ else if keyboard_check_pressed(vk_up) || keyboard_check_pressed(vk_down)
           <argument>
             <kind>1</kind>
             <string>targetVelX = 0;
-if keyboard_check(vk_left){
+background_hspeed[0] = 0;
+
+if keyboard_check(vk_left)
     sprite_index = sprMainWalkLeft;
-    background_hspeed[0] = bgHSpeed;
-}
+
 </string>
           </argument>
         </arguments>
@@ -402,10 +404,11 @@ if keyboard_check(vk_left){
           <argument>
             <kind>1</kind>
             <string>targetVelX = 0;
-if keyboard_check(vk_right){
+background_hspeed[0] = 0;
+
+if keyboard_check(vk_right) || keyboard_check(vk_down) || keyboard_check(vk_up)
     sprite_index = sprMainWalkRight;
-    background_hspeed[0] = -bgHSpeed;
-}
+
 </string>
           </argument>
         </arguments>
@@ -428,20 +431,21 @@ if keyboard_check(vk_right){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// vk_down or vk_up
-if keyboard_check_released(vk_down) || keyboard_check_released(vk_up)
+            <string>if keyboard_check_released(vk_down) || keyboard_check_released(vk_up)
     targetVelY = 0;
 
-if keyboard_check(vk_control) &amp;&amp; targetVelX == 0 &amp;&amp; targetVelY == 0{
+if keyboard_check(vk_control) &amp;&amp; targetVelX == 0 &amp;&amp; targetVelY == 0
     sprite_index = sprThrower;
+
+else if keyboard_check(vk_nokey){
+    targetVelX = 0;
+    targetVelY = 0;
     background_hspeed[0] = 0;
+    sprite_index = sprMainStop;
 }
 
-// vk_nokey
-else if keyboard_check(vk_nokey){
+else if targetVelX == 0 &amp;&amp; targetVelY == 0
     sprite_index = sprMainStop;
-    background_hspeed[0] = 0;
-}
 
 </string>
           </argument>
