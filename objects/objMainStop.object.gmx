@@ -431,20 +431,18 @@ if keyboard_check(vk_right) || keyboard_check(vk_down) || keyboard_check(vk_up)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if keyboard_check_released(vk_down) || keyboard_check_released(vk_up)
+            <string>// Release &lt;down&gt; or &lt;up&gt;
+if keyboard_check_released(vk_down) || keyboard_check_released(vk_up){
     targetVelY = 0;
-
-if keyboard_check(vk_control) &amp;&amp; targetVelX == 0 &amp;&amp; targetVelY == 0
-    sprite_index = sprThrower;
-
-else if keyboard_check(vk_nokey){
-    targetVelX = 0;
-    targetVelY = 0;
-    background_hspeed[0] = 0;
-    sprite_index = sprMainStop;
 }
 
-else if targetVelX == 0 &amp;&amp; targetVelY == 0
+// Player is stop
+var isPlayerStop = targetVelX == 0 &amp;&amp; targetVelY == 0;
+
+if keyboard_check(vk_control) &amp;&amp; isPlayerStop
+    sprite_index = sprThrower;
+
+else if isPlayerStop
     sprite_index = sprMainStop;
 
 </string>
