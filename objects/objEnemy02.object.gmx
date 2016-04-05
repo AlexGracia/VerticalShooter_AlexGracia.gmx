@@ -3,7 +3,7 @@
   <spriteName>sprEnemy02</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>1</depth>
   <persistent>0</persistent>
   <parentName>objEnemy01</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,9 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>depth = 1;
-vspeed = 1;
-
+            <string>vspeed = 1;
+image_speed = 0.5;
 </string>
           </argument>
         </arguments>

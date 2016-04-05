@@ -34,6 +34,7 @@ bgHSpeed = 4;
 lifes = 3;
 canShoot = true;
 isInvulnerable = false;
+image_speed = 0.5;
 
 </string>
           </argument>
@@ -413,6 +414,11 @@ if keyboard_check(vk_control) &amp;&amp; isPlayerStopped
 else if isPlayerStopped
     sprite_index = sprMainStop;
 
+else if keyboard_check(vk_nokey){
+    targetVelX = 0;
+    targetVelY = 0;
+    sprite_index = sprMainStop;
+}
 </string>
           </argument>
         </arguments>

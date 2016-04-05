@@ -33,6 +33,7 @@
     <background>background\bgDesert</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts"/>
   <objects name="objects">
     <objects name="groupPlay">
       <object>objects\objMainStop</object>

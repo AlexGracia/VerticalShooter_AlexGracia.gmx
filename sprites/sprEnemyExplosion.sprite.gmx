@@ -27,12 +27,5 @@
     <frame index="4">images\sprEnemyExplosion_4.png</frame>
     <frame index="5">images\sprEnemyExplosion_5.png</frame>
     <frame index="6">images\sprEnemyExplosion_6.png</frame>
-    <frame index="7">images\sprEnemyExplosion_7.png</frame>
-    <frame index="8">images\sprEnemyExplosion_8.png</frame>
-    <frame index="9">images\sprEnemyExplosion_9.png</frame>
-    <frame index="10">images\sprEnemyExplosion_10.png</frame>
-    <frame index="11">images\sprEnemyExplosion_11.png</frame>
-    <frame index="12">images\sprEnemyExplosion_12.png</frame>
-    <frame index="13">images\sprEnemyExplosion_13.png</frame>
   </frames>
 </sprite>
